@@ -1,0 +1,16 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="3_EliminarSucursal_Ej3.aspx.cs" Inherits="Trabajo_Practico_Nro_5._3_EliminarSucursal_Ej3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    </form>
+</body>
+</html>
