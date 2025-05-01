@@ -94,6 +94,7 @@
     <Compile Include="3_EliminarSucursal_Ej3.aspx.designer.cs">
       <DependentUpon>3_EliminarSucursal_Ej3.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConexionSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
