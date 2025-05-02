@@ -14,7 +14,7 @@
             width: 66px;
         }
         .auto-style3 {
-            width: 100px;
+            width: 118px;
         }
         .auto-style4 {
             width: 130px;
@@ -77,9 +77,15 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">Nombre Sucursal:</td>
+                    <td class="auto-style4">
+                        <asp:TextBox ID="txtNombreSucursal" runat="server"></asp:TextBox>
+                    </td>
+                    <td>
+                         <asp:RequiredFieldValidator  
+                        ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" ForeColor="Red">Debe ingresar un nombre de sucursal</asp:RequiredFieldValidator>
+
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -87,9 +93,15 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">Descripción</td>
+                    <td class="auto-style4">
+                        <asp:TextBox ID="txtDescripción" runat="server"></asp:TextBox>
+                    </td>
+                    <td>
+                         <asp:RequiredFieldValidator  
+                        ID="rfvDescripción" runat="server" ControlToValidate="txtDescripción" ForeColor="Red">Debe ingresar una descripción</asp:RequiredFieldValidator>
+
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

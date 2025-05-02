@@ -8,7 +8,7 @@ namespace Trabajo_Practico_Nro_5
 {
     public class ConexionSql
     {
-        private const string ConectionString = "Data Source=localhost\\sqlexpress; Initial Catalog=BDSucursales;Integrated Security = True";
+        private const string ConectionString = @"Server=DESKTOP-JNJ0TAL\SQLEXPRESS;Database=BDSucursales;Integrated Security=True";
         public SqlDataReader readerSql (string querySql)
         {
             // Se define la cadena de conexión
