@@ -68,8 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgregarSucursal.aspx" />
-    <Content Include="ListadoDeSucirsales.aspx" />
     <Content Include="EliminarSucursal.aspx" />
+    <Content Include="ListadoDeSucirsales.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,13 +80,6 @@
     <Compile Include="AgregarSucursal.aspx.designer.cs">
       <DependentUpon>AgregarSucursal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ListadoDeSucirsales.aspx.cs">
-      <DependentUpon>ListadoDeSucirsales.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ListadoDeSucirsales.aspx.designer.cs">
-      <DependentUpon>ListadoDeSucirsales.aspx</DependentUpon>
-    </Compile>
     <Compile Include="EliminarSucursal.aspx.cs">
       <DependentUpon>EliminarSucursal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +88,13 @@
       <DependentUpon>EliminarSucursal.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConexionSql.cs" />
+    <Compile Include="ListadoDeSucirsales.aspx.cs">
+      <DependentUpon>ListadoDeSucirsales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoDeSucirsales.aspx.designer.cs">
+      <DependentUpon>ListadoDeSucirsales.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
