@@ -14,10 +14,20 @@ namespace Trabajo_Practico_Nro_5
         protected void Page_Load(object sender, EventArgs e)
         {
             ConexionSql conexion = new ConexionSql();
-            string query = "SELECT * FROM Sucursal"; 
+            string query = "SELECT * FROM Provincia"; 
             SqlDataReader lector = conexion.readerSql(query);
 
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
+            if (!IsPostBack)
+            {
+                ddlProvincia.DataSource = lector;  
+                ddlProvincia.DataTextField = "DescripcionProvincia";
+                ddlProvincia.DataValueField = "Id_Provincia";
+                lector.Close();
+            }
+
+            
 
         }
     }
