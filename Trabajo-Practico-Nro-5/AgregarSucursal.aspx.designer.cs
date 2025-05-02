@@ -11,7 +11,7 @@ namespace Trabajo_Practico_Nro_5
 {
 
 
-    public partial class _1_AgregarSucirsal_Ej1
+    public partial class AgregarSucursal
     {
 
         /// <summary>

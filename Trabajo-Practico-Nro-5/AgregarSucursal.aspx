@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgregarSucirsal.aspx.cs" Inherits="Trabajo_Practico_Nro_5._1_AgregarSucirsal_Ej1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgregarSucursal.aspx.cs" Inherits="Trabajo_Practico_Nro_5.AgregarSucursal" %>
 
 <!DOCTYPE html>
 
@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
+
         .auto-style1 {
             width: 100%;
         }
@@ -23,6 +24,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div>
+        </div>
         <div>
             <table class="auto-style1">
                 <tr>
