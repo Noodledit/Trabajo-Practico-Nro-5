@@ -17,6 +17,8 @@ namespace Trabajo_Practico_Nro_5
             string query = "SELECT * FROM Sucursal"; 
             SqlDataReader lector = conexion.readerSql(query);
 
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
         }
     }
 }

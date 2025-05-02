@@ -122,7 +122,9 @@
                     <td class="auto-style4">
                         <asp:TextBox ID="TxtDireccion" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td> <asp:RequiredFieldValidator 
+  ID="rfvDireccion" runat="server" ControlToValidate="TxtDireccion" ErrorMessage="La Direccion es Obligatoria" ForeColor="Red"> 
+  </asp:RequiredFieldValidator></td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
