@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using Trabajo_Practico_Nro_5;
+using System.Data;
 
 namespace Trabajo_Practico_Nro_5
 {
@@ -15,22 +16,19 @@ namespace Trabajo_Practico_Nro_5
         {
             ConexionSql conexion = new ConexionSql();
             string query = "SELECT * FROM Provincia"; 
-            SqlDataReader lector = conexion.readerSql(query);
+            DataTable dtProvincias = new DataTable();
+            dtProvincias = conexion.readerTable(query);
 
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
 
             if (!IsPostBack)
-            {
-                ddlProvincia.DataSource = lector;  
+            {  
+                ddlProvincia.DataSource = dtProvincias;  
                 ddlProvincia.DataTextField = "DescripcionProvincia";
                 ddlProvincia.DataValueField = "Id_Provincia";
                 ddlProvincia.DataBind();
-                ddlProvincia.Items.Insert(0, new ListItem("Seleccione una provincia", "0"));
-                lector.Close();
+                ddlProvincia.Items.Insert(0, new ListItem("--Seleccionear--", "0"));
             }
-
-            
-
         }
     }
 }

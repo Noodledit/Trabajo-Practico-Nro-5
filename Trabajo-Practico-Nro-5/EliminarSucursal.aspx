@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="3_EliminarSucursal_Ej3.aspx.cs" Inherits="Trabajo_Practico_Nro_5._3_EliminarSucursal_Ej3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EliminarSucursal.aspx.cs" Inherits="Trabajo_Practico_Nro_5._3_EliminarSucursal_Ej3" %>
 
 <!DOCTYPE html>
 

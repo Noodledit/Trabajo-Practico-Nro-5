@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="1_AgregarSucirsal_Ej1.aspx.cs" Inherits="Trabajo_Practico_Nro_5._1_AgregarSucirsal_Ej1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgregarSucirsal.aspx.cs" Inherits="Trabajo_Practico_Nro_5._1_AgregarSucirsal_Ej1" %>
 
 <!DOCTYPE html>
 

@@ -67,32 +67,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1_AgregarSucirsal_Ej1.aspx" />
-    <Content Include="2_ListadoDeSucirsales_Ej2.aspx" />
-    <Content Include="3_EliminarSucursal_Ej3.aspx" />
+    <Content Include="AgregarSucirsal.aspx" />
+    <Content Include="ListadoDeSucirsales.aspx" />
+    <Content Include="EliminarSucursal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1_AgregarSucirsal_Ej1.aspx.cs">
-      <DependentUpon>1_AgregarSucirsal_Ej1.aspx</DependentUpon>
+    <Compile Include="AgregarSucirsal.aspx.cs">
+      <DependentUpon>AgregarSucirsal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="1_AgregarSucirsal_Ej1.aspx.designer.cs">
-      <DependentUpon>1_AgregarSucirsal_Ej1.aspx</DependentUpon>
+    <Compile Include="AgregarSucirsal.aspx.designer.cs">
+      <DependentUpon>AgregarSucirsal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="2_ListadoDeSucirsales_Ej2.aspx.cs">
-      <DependentUpon>2_ListadoDeSucirsales_Ej2.aspx</DependentUpon>
+    <Compile Include="ListadoDeSucirsales.aspx.cs">
+      <DependentUpon>ListadoDeSucirsales.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="2_ListadoDeSucirsales_Ej2.aspx.designer.cs">
-      <DependentUpon>2_ListadoDeSucirsales_Ej2.aspx</DependentUpon>
+    <Compile Include="ListadoDeSucirsales.aspx.designer.cs">
+      <DependentUpon>ListadoDeSucirsales.aspx</DependentUpon>
     </Compile>
-    <Compile Include="3_EliminarSucursal_Ej3.aspx.cs">
-      <DependentUpon>3_EliminarSucursal_Ej3.aspx</DependentUpon>
+    <Compile Include="EliminarSucursal.aspx.cs">
+      <DependentUpon>EliminarSucursal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="3_EliminarSucursal_Ej3.aspx.designer.cs">
-      <DependentUpon>3_EliminarSucursal_Ej3.aspx</DependentUpon>
+    <Compile Include="EliminarSucursal.aspx.designer.cs">
+      <DependentUpon>EliminarSucursal.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConexionSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
