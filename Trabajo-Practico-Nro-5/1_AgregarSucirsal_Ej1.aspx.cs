@@ -24,6 +24,8 @@ namespace Trabajo_Practico_Nro_5
                 ddlProvincia.DataSource = lector;  
                 ddlProvincia.DataTextField = "DescripcionProvincia";
                 ddlProvincia.DataValueField = "Id_Provincia";
+                ddlProvincia.DataBind();
+                ddlProvincia.Items.Insert(0, new ListItem("Seleccione una provincia", "0"));
                 lector.Close();
             }
 
