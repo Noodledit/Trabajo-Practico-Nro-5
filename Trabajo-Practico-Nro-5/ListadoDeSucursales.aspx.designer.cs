@@ -11,7 +11,7 @@ namespace Trabajo_Practico_Nro_5
 {
 
 
-    public partial class _3_EliminarSucursal_Ej3
+    public partial class _2_ListadoDeSucirsales_Ej2
     {
 
         /// <summary>

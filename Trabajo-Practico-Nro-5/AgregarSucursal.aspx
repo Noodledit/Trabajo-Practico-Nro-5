@@ -20,23 +20,56 @@
         .auto-style4 {
             width: 130px;
         }
+        .auto-style5 {
+            width: 66px;
+            height: 23px;
+        }
+        .auto-style6 {
+            width: 118px;
+            height: 23px;
+        }
+        .auto-style7 {
+            width: 130px;
+            height: 23px;
+        }
+        .auto-style8 {
+            height: 23px;
+        }
+        .auto-style9 {
+            width: 362px;
+        }
+        .auto-style10 {
+            width: 200px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
-        <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style10">
+                    <asp:HyperLink ID="hlAgregar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
+                </td>
+                <td class="auto-style10">
+                    <asp:HyperLink ID="hlListado" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/ListadoDeSucirsales.aspx">Listado de Sucursales</asp:HyperLink>
+                </td>
+                <td class="auto-style10">
+                    <asp:HyperLink ID="hlEliminar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style7"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style8"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
@@ -166,7 +199,6 @@
                     <td>&nbsp;</td>
                 </tr>
             </table>
-        </div>
     </form>
 </body>
 </html>

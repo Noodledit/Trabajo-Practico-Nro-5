@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EliminarSucursal.aspx.cs" Inherits="Trabajo_Practico_Nro_5._3_EliminarSucursal_Ej3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListadoDeSucursales.aspx.cs" Inherits="Trabajo_Practico_Nro_5._2_ListadoDeSucirsales_Ej2" %>
 
 <!DOCTYPE html>
 
@@ -10,11 +10,11 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style3 {
-            width: 200px;
-        }
         .auto-style4 {
             width: 368px;
+        }
+        .auto-style3 {
+            width: 200px;
         }
     </style>
 </head>
