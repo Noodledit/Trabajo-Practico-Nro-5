@@ -9,7 +9,7 @@ namespace Trabajo_Practico_Nro_5
 {///"Data Source=localhost\\sqlexpress; Initial Catalog=BDSucursales;Integrated Security = True";
     public class ConexionSql
     {   //no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
-        private const string ConectionString = @"Server=DESKTOP-JNJ0TAL\SQLEXPRESS;Database=BDSucursales;Integrated Security=True";//no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
+        private const string ConectionString = @"Server=.;Database=BDSucursales;Integrated Security=True";//no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
         //no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
         public DataTable readerTable(string querySql)
         {
@@ -28,7 +28,7 @@ namespace Trabajo_Practico_Nro_5
             return dt;
         }
 
-       public void EjecutarConsulta(string consulta)
+       public void EjecutarConsulta(string consulta, string nombre, string _descripcion, int _provincia, string _direccion)
         {
             SqlConnection connection2 = new SqlConnection(ConectionString);
             
