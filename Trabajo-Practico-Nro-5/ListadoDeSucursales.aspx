@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListadoDeSucursales.aspx.cs" Inherits="Trabajo_Practico_Nro_5.ListadoDeSucursales" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListadoDeSucirsales.aspx.cs" Inherits="Trabajo_Practico_Nro_5.ListadoDeSucirsales" %>
 
 <!DOCTYPE html>
 

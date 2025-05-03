@@ -11,7 +11,7 @@ namespace Trabajo_Practico_Nro_5
 {
 
 
-    public partial class ListadoDeSucursales
+    public partial class ListadoDeSucirsales
     {
 
         /// <summary>
