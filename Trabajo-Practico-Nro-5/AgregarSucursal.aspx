@@ -20,20 +20,80 @@
         .auto-style4 {
             width: 130px;
         }
+        .auto-style5 {
+            width: 66px;
+            height: 23px;
+        }
+        .auto-style6 {
+            width: 118px;
+            height: 23px;
+        }
+        .auto-style7 {
+            width: 130px;
+            height: 23px;
+        }
+        .auto-style8 {
+            height: 23px;
+        }
+        .auto-style9 {
+            width: 362px;
+        }
+        .auto-style10 {
+            width: 200px;
+        }
+        .auto-style11 {
+            height: 23px;
+            width: 226px;
+        }
+        .auto-style12 {
+            width: 226px;
+        }
+        .auto-style13 {
+            height: 23px;
+            width: 272px;
+        }
+        .auto-style14 {
+            width: 272px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
-        <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style10">
+                    &nbsp;</td>
+                <td class="auto-style10">
+                    &nbsp;</td>
+                <td class="auto-style10">
+                    &nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
             <table class="auto-style1">
                 <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style7"></td>
+                    <td class="auto-style11">
+                    <asp:HyperLink ID="hlAgregar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
+                    </td>
+                    <td class="auto-style13">
+                    <asp:HyperLink ID="hlListado" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/ListadoDeSucursales.aspx">Listado de Sucursales</asp:HyperLink>
+                    </td>
+                    <td class="auto-style8">
+                    <asp:HyperLink ID="hlEliminar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
+                    </td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style8"></td>
+                </tr>
+                <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -42,18 +102,8 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -62,8 +112,8 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -72,8 +122,8 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -84,12 +134,12 @@
                     <td class="auto-style4">
                         <asp:TextBox ID="txtNombreSucursal" runat="server"></asp:TextBox>
                     </td>
-                    <td>
+                    <td class="auto-style12">
                          <asp:RequiredFieldValidator  
                         ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" ForeColor="Red">Debe ingresar un nombre de sucursal</asp:RequiredFieldValidator>
 
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -100,12 +150,12 @@
                     <td class="auto-style4">
                         <asp:TextBox ID="txtDescripción" runat="server"></asp:TextBox>
                     </td>
-                    <td>
+                    <td class="auto-style12">
                          <asp:RequiredFieldValidator  
                         ID="rfvDescripción" runat="server" ControlToValidate="txtDescripción" ForeColor="Red">Debe ingresar una descripción</asp:RequiredFieldValidator>
 
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -120,13 +170,13 @@
 
 
                     </td>
-                    <td>
+                    <td class="auto-style12">
                          <asp:RequiredFieldValidator  
                         ID="rfvProvincia" runat="server" ControlToValidate="ddlProvincia" ErrorMessage="La Provincia debe seleccionarse" ForeColor="Red"> 
                         </asp:RequiredFieldValidator>
 
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -137,20 +187,10 @@
                     <td class="auto-style4">
                         <asp:TextBox ID="TxtDireccion" runat="server"></asp:TextBox>
                     </td>
-                    <td> <asp:RequiredFieldValidator 
+                    <td class="auto-style12"> <asp:RequiredFieldValidator 
   ID="rfvDireccion" runat="server" ControlToValidate="TxtDireccion" ErrorMessage="La Direccion es Obligatoria" ForeColor="Red"> 
   </asp:RequiredFieldValidator></td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -159,14 +199,25 @@
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:Button ID="btnAceptar" runat="server" OnClick="btnAceptar_Click" Text="Aceptar" />
+                    </td>
+                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
-        </div>
     </form>
 </body>
 </html>

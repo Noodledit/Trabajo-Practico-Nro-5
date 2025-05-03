@@ -9,9 +9,9 @@ namespace Trabajo_Practico_Nro_5
 {///"Data Source=localhost\\sqlexpress; Initial Catalog=BDSucursales;Integrated Security = True";
     public class ConexionSql
     {   //no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
-        private const string ConectionString = "Data Source=.;Initial Catalog = BDSucursales; Integrated Security = True";//no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
+        private const string ConectionString = @"Server=.;Database=BDSucursales;Integrated Security=True";//no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
         //no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
-        public DataTable readerTable (string querySql)
+        public DataTable readerTable(string querySql)
         {
             DataTable dt = new DataTable();
             // Se define la cadena de conexión
@@ -27,7 +27,25 @@ namespace Trabajo_Practico_Nro_5
             // se devuelve el lector
             return dt;
         }
+
+       public void EjecutarConsulta(string consulta, string nombre, string descripcion, int provincia, string direccion)
+        {
+            SqlConnection connection2 = new SqlConnection(ConectionString);
+            
+            connection2.Open();
+
+            SqlCommand sqlCommand = new SqlCommand(consulta, connection2);
+                
+            connection2.Close();
+
+            sqlCommand.Parameters.AddWithValue("@nombre", nombre);
+            sqlCommand.Parameters.AddWithValue("@descripcion", descripcion);
+            sqlCommand.Parameters.AddWithValue("@idProvincia", provincia);
+            sqlCommand.Parameters.AddWithValue("@direccion", direccion);
+        }
     }
 }
 
+
 ///"Data Source=NOODLE-DESK; Initial Catalog=BDSucursales;Integrated Security=True";
+///"Data Source=.;Initial Catalog = BDSucursales; Integrated Security = True";
