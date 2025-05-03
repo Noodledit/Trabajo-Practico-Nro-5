@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Trabajo_Practico_Nro_5
 {
-    public partial class _3_EliminarSucursal_Ej3 : System.Web.UI.Page
+    public partial class EliminarSucursal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

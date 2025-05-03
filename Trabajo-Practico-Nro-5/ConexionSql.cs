@@ -28,16 +28,20 @@ namespace Trabajo_Practico_Nro_5
             return dt;
         }
 
-       public void EjecutarConsulta(string consulta, string nombre, string _descripcion, int _provincia, string _direccion)
+       public void EjecutarConsulta(string consulta, string nombre, string descripcion, int provincia, string direccion)
         {
             SqlConnection connection2 = new SqlConnection(ConectionString);
             
-                connection2.Open();
+            connection2.Open();
 
-                SqlCommand sqlCommand = new SqlCommand(consulta, connection2);
+            SqlCommand sqlCommand = new SqlCommand(consulta, connection2);
                 
-                connection2.Close();
-            
+            connection2.Close();
+
+            sqlCommand.Parameters.AddWithValue("@nombre", nombre);
+            sqlCommand.Parameters.AddWithValue("@descripcion", descripcion);
+            sqlCommand.Parameters.AddWithValue("@idProvincia", provincia);
+            sqlCommand.Parameters.AddWithValue("@direccion", direccion);
         }
     }
 }

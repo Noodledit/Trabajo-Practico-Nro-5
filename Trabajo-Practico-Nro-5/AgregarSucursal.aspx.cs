@@ -34,7 +34,7 @@ namespace Trabajo_Practico_Nro_5
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-
+            string query = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_Provincia, DireccionSucursal) VALUES (@nombre, @descripcion, @idProvincia, @direccion)";
         }
     }
 }
