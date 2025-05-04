@@ -13,5 +13,10 @@ namespace Trabajo_Practico_Nro_5
         {
 
         }
+
+        protected void hlAgregar_DataBinding(object sender, EventArgs e)
+        {
+            Response.Redirect("AgregarSucursal.aspx");
+        }
     }
 }
