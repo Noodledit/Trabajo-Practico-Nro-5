@@ -196,14 +196,14 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style14">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style7"></td>
+                    <td class="auto-style11"></td>
+                    <td class="auto-style13"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style8"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
@@ -211,7 +211,9 @@
                     <td class="auto-style4">
                         <asp:Button ID="btnAceptar" runat="server" OnClick="btnAceptar_Click" Text="Aceptar" />
                     </td>
-                    <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style12">
+                        <asp:Label ID="lblMensaje" runat="server" ForeColor="#009933" Text=" "></asp:Label>
+                    </td>
                     <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

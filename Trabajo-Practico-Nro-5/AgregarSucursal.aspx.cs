@@ -45,6 +45,12 @@ namespace Trabajo_Practico_Nro_5
 
             conexion.EjecutarConsulta(query, nombre, descripcion, provinciaId, direccion);
 
+            lblMensaje.Text = "Sucursal agregada correctamente.";
+            txtDescripción.Text = string.Empty;
+            txtNombreSucursal.Text = string.Empty;  
+            ddlProvincia.SelectedIndex = 0;
+            TxtDireccion.Text = string.Empty;
+
         }
     }
 }
