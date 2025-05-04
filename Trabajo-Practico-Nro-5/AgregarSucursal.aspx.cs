@@ -10,14 +10,14 @@ namespace Trabajo_Practico_Nro_5
 {
     public partial class AgregarSucursal : System.Web.UI.Page
     {
-
+        ConexionSql conexion = new ConexionSql();
         private string consultaSQL;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
 
-            ConexionSql conexion = new ConexionSql();
+           
             string query = "SELECT * FROM Provincia";
             DataTable dtProvincias = new DataTable();
             dtProvincias = conexion.readerTable(query);
@@ -34,7 +34,17 @@ namespace Trabajo_Practico_Nro_5
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_Provincia, DireccionSucursal) VALUES (@nombre, @descripcion, @idProvincia, @direccion)";
+            
+            string query = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal)\r\nVALUES (@nombre, @descripcion, @idProvincia, @direccion)\r\n";
+
+            //obtengo los valores ingresados
+            string nombre = txtNombreSucursal.Text; 
+            string descripcion = txtDescripción.Text; 
+            int provinciaId = int.Parse(ddlProvincia.SelectedValue); 
+            string direccion = TxtDireccion.Text;
+
+            conexion.EjecutarConsulta(query, nombre, descripcion, provinciaId, direccion);
+
         }
     }
 }
