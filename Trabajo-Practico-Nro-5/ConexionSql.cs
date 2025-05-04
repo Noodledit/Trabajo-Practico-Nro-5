@@ -4,13 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
 using System.Data;
+using System.Drawing;
 
 namespace Trabajo_Practico_Nro_5
 {///"Data Source=localhost\\sqlexpress; Initial Catalog=BDSucursales;Integrated Security = True";
     public class ConexionSql
-    {   
-        //private const string ConectionString = @"Data Source=localhost\\sqlexpress; Initial Catalog=BDSucursales;Integrated Security = True";//no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
-        private const string ConectionString = @"Data Source=.; Initial Catalog=BDSucursales;Integrated Security = True";
+    {
+        //private const string ConectionString = "Data Source=.;Initial Catalog = BDSucursales; Integrated Security = True"; //no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
+        private const string ConectionString = @"Server=DESKTOP-JNJ0TAL\SQLEXPRESS;DataBase = BDSucursales; Integrated Security = True;";
 
         SqlConnection connection = new SqlConnection(ConectionString);
 
