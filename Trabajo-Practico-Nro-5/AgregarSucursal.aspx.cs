@@ -43,7 +43,7 @@ namespace Trabajo_Practico_Nro_5
             int provinciaId = int.Parse(ddlProvincia.SelectedValue); 
             string direccion = TxtDireccion.Text;
 
-            conexion.EjecutarConsulta(query, nombre, descripcion, provinciaId, direccion);
+            int resultado = conexion.EjecutarConsulta(query, nombre, descripcion, provinciaId, direccion);
 
             lblMensaje.Text = "Sucursal agregada correctamente.";
             txtDescripción.Text = string.Empty;

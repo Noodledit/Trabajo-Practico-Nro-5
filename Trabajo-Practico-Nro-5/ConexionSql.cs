@@ -30,7 +30,7 @@ namespace Trabajo_Practico_Nro_5
             return dt;
         }
 
-        public void EjecutarConsulta(string consulta, string nombre, string descripcion, int provincia, string direccion)
+        public int EjecutarConsulta(string consulta, string nombre, string descripcion, int provincia, string direccion)
         {
 
             connection.Open();
@@ -42,8 +42,10 @@ namespace Trabajo_Practico_Nro_5
             sqlCommand.Parameters.AddWithValue("@idProvincia", provincia);
             sqlCommand.Parameters.AddWithValue("@direccion", direccion);
 
-            sqlCommand.ExecuteNonQuery();
+            int resultado = sqlCommand.ExecuteNonQuery();
             connection.Close();
+
+            return resultado;
         }
     }
 }
@@ -51,3 +53,4 @@ namespace Trabajo_Practico_Nro_5
 
 ///"Data Source=NOODLE-DESK; Initial Catalog=BDSucursales;Integrated Security=True";
 ///"Data Source=.;Initial Catalog = BDSucursales; Integrated Security = True";
+/// Vale: @"Data Source=DESKTOP-MHN7D94\SQLEXPRESS;Initial Catalog=BDSucursales;Integrated Security=True"
