@@ -19,6 +19,9 @@
         .auto-style5 {
             width: 205px;
         }
+        .auto-style6 {
+            width: 227px;
+        }
     </style>
 </head>
 <body>
@@ -26,8 +29,7 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style5">
                     <asp:HyperLink ID="hlAgregar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/AgregarSucursal.aspx" OnDataBinding="hlAgregar_DataBinding">Agregar Sucursal</asp:HyperLink>
                     </td>
@@ -41,8 +43,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
@@ -50,8 +51,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style6">
+                        <asp:Label ID="ListLbl" runat="server"></asp:Label>
+                    </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
@@ -59,17 +61,17 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style6">Busqueda, ingrese el Id Sucursal: </td>
+                    <td class="auto-style5">
+                        <asp:TextBox ID="TxtSucursal" runat="server" Width="187px"></asp:TextBox>
+                    </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style5">
                         <asp:GridView ID="gvSucursales" runat="server">
                         </asp:GridView>
@@ -80,8 +82,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
@@ -89,8 +90,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
