@@ -13,9 +13,6 @@
         .auto-style3 {
             width: 250px;
         }
-        .auto-style4 {
-            width: 251px;
-        }
         .auto-style5 {
             width: 205px;
         }
@@ -27,6 +24,9 @@
         }
         .auto-style17 {
             width: 250px;
+        }
+        .auto-style18 {
+            width: 75px;
         }
     </style>
 </head>
@@ -55,7 +55,7 @@
                     <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -65,7 +65,7 @@
                     </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -77,10 +77,12 @@
                     <td class="auto-style3">
                         <asp:RegularExpressionValidator ID="revIdSucursal" runat="server" ControlToValidate="txtSucursalID" ForeColor="#CC0000" ValidationExpression="^[0-9]+$">Debe ingresar un ID valido</asp:RegularExpressionValidator>
                     </td>
-                    <td class="auto-style4">
+                    <td class="auto-style18">
                         <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnMostrar" runat="server" Text="Mostrar todos" />
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -90,7 +92,7 @@
                         </asp:GridView>
                     </td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -98,7 +100,7 @@
                     <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -106,7 +108,7 @@
                     <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
