@@ -34,8 +34,7 @@ namespace Trabajo_Practico_Nro_5
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            
-            string query = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal)\r\nVALUES (@nombre, @descripcion, @idProvincia, @direccion)\r\n";
+           string query = "INSERT INTO Sucursal (NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal)\r\nVALUES (@nombre, @descripcion, @idProvincia, @direccion)\r\n";
 
             //obtengo los valores ingresados
             string nombre = txtNombreSucursal.Text; 
@@ -43,6 +42,12 @@ namespace Trabajo_Practico_Nro_5
             int provinciaId = int.Parse(ddlProvincia.SelectedValue); 
             string direccion = TxtDireccion.Text;
 
+            if (!System.Text.RegularExpressions.Regex.IsMatch(direccion, @"^[a-zA-Z0-9\s]+$"))
+            {
+                lblMensaje.Text = "La dirección solo puede contener letras y números.";
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
+                return;
+            }
             int resultado = conexion.EjecutarConsulta(query, nombre, descripcion, provinciaId, direccion);
 
             lblMensaje.Text = "Sucursal agregada correctamente.";
