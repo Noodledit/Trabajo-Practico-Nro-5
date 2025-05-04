@@ -60,13 +60,22 @@ namespace Trabajo_Practico_Nro_5
         protected global::System.Web.UI.WebControls.Label ListLbl;
 
         /// <summary>
-        /// Control TxtSucursal.
+        /// Control txtSucursalID.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtSucursal;
+        protected global::System.Web.UI.WebControls.TextBox txtSucursalID;
+
+        /// <summary>
+        /// Control revIdSucursal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revIdSucursal;
 
         /// <summary>
         /// Control gvSucursales.

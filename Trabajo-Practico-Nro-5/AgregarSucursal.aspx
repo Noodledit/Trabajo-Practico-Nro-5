@@ -35,12 +35,6 @@
         .auto-style8 {
             height: 23px;
         }
-        .auto-style9 {
-            width: 362px;
-        }
-        .auto-style10 {
-            width: 200px;
-        }
         .auto-style11 {
             height: 23px;
             width: 226px;
@@ -55,44 +49,45 @@
         .auto-style14 {
             width: 272px;
         }
+        .auto-style16 {
+            width: 198px;
+        }
+        .auto-style17 {
+            width: 250px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
-                <td class="auto-style9">&nbsp;</td>
-                <td class="auto-style10">
-                    &nbsp;</td>
-                <td class="auto-style10">
-                    &nbsp;</td>
-                <td class="auto-style10">
-                    &nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
+                <td class="auto-style16">
+                    <asp:HyperLink ID="hlAgregar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
+                    </td>
+                <td class="auto-style17">
+                    <asp:HyperLink ID="hlListado" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/ListadoSucursales.aspx">Listado de Sucursales</asp:HyperLink>
+                    </td>
+                <td class="auto-style16">
+                    <asp:HyperLink ID="hlEliminar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
+                    </td>
+                <td class="auto-style16">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style5"></td>
-                    <td class="auto-style6"></td>
-                    <td class="auto-style7"></td>
-                    <td class="auto-style11">
-                    <asp:HyperLink ID="hlAgregar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
-                    </td>
-                    <td class="auto-style13">
-                    <asp:HyperLink ID="hlListado" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/ListadoSucursales.aspx">Listado de Sucursales</asp:HyperLink>
-                    </td>
-                    <td class="auto-style8">
-                    <asp:HyperLink ID="hlEliminar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
-                    </td>
-                    <td class="auto-style8"></td>
-                    <td class="auto-style8"></td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td colspan="3">&nbsp;</td>
+                    <td class="auto-style14">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style12">&nbsp;</td>
+                    <td colspan="3"><h1>Grupo N° 12</h1></td>
                     <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -110,19 +105,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style14">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style12">&nbsp;</td>
+                    <td colspan="3"><h2>Agregar Sucursal</h2></td>
                     <td class="auto-style14">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>

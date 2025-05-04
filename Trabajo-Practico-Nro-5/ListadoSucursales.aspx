@@ -22,26 +22,35 @@
         .auto-style6 {
             width: 227px;
         }
+        .auto-style16 {
+            width: 198px;
+        }
+        .auto-style17 {
+            width: 250px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style6">&nbsp;</td>
-                    <td class="auto-style5">
-                    <asp:HyperLink ID="hlAgregar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/AgregarSucursal.aspx" OnDataBinding="hlAgregar_DataBinding">Agregar Sucursal</asp:HyperLink>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style16">&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
+                <td class="auto-style16">
+                    <asp:HyperLink ID="hlAgregar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursal</asp:HyperLink>
                     </td>
-                    <td class="auto-style3">
+                <td class="auto-style17">
                     <asp:HyperLink ID="hlListado" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/ListadoSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
-                    <td class="auto-style4">
+                <td class="auto-style16">
                     <asp:HyperLink ID="hlEliminar" runat="server" Font-Underline="True" ForeColor="#0000CC" NavigateUrl="~/EliminarSucursal.aspx">Eliminar Sucursal</asp:HyperLink>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
+                <td class="auto-style16">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+            <table class="auto-style1">
                 <tr>
                     <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style5">&nbsp;</td>
@@ -63,9 +72,11 @@
                 <tr>
                     <td class="auto-style6">Busqueda, ingrese el Id Sucursal: </td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="TxtSucursal" runat="server" Width="187px"></asp:TextBox>
+                        <asp:TextBox ID="txtSucursalID" runat="server" Width="187px"></asp:TextBox>
                     </td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:RegularExpressionValidator ID="revIdSucursal" runat="server" ControlToValidate="txtSucursalID" ForeColor="#CC0000" ValidationExpression="^[0-9]+$">Debe ingresar un ID valido</asp:RegularExpressionValidator>
+                    </td>
                     <td class="auto-style4">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
