@@ -38,10 +38,11 @@ namespace Trabajo_Practico_Nro_5
                     if (result.Rows.Count >0)
                     {
                         //GrindV, databind, etc...
-                    } 
-
-
-
+                    }
+                else
+                {
+                    lblNoResultados.Text = "No se encontraron sucursales*";
+                }
 
             }
 

@@ -63,7 +63,9 @@
                     <td class="auto-style6">
                         <asp:Label ID="ListLbl" runat="server"></asp:Label>
                     </td>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:Label ID="lblNoResultados" runat="server" ForeColor="#CC0000"></asp:Label>
+                    </td>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style18">&nbsp;</td>
                     <td>&nbsp;</td>
