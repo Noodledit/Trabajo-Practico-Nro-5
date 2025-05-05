@@ -65,6 +65,8 @@ namespace Trabajo_Practico_Nro_5
             // Se define el comando SQL
             SqlCommand command = new SqlCommand(querySql, connection);
 
+            command.Parameters.AddWithValue("@idSucursal", idSucursal);
+
             connection.Close();
 
         }
