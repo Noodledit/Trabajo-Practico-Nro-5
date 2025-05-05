@@ -9,6 +9,7 @@ namespace Trabajo_Practico_Nro_5
 {
     public partial class EliminarSucursal : System.Web.UI.Page
     {
+        ConexionSql conexion = new ConexionSql();
 
         protected void Page_Load(object sender, EventArgs e)
         {

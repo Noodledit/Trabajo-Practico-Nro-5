@@ -10,7 +10,7 @@ namespace Trabajo_Practico_Nro_5
 {
     public partial class ListadoSucursales : System.Web.UI.Page
     {
-        string query = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, S.Id_ProvinciaSucursal, S.DireccionSucursal, P.NombreProvincia " +
+        string query = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, S.Id_ProvinciaSucursal, S.DireccionSucursal, P.DescripcionProvinci " +
                        "FROM Sucursal S " +
                        "INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia " +
                        "WHERE S.Id_Sucursal = @IdSucursal";
@@ -30,15 +30,16 @@ namespace Trabajo_Practico_Nro_5
             if (!string.IsNullOrEmpty(idSucursal))
             {
 
+                ConexionSql conection = new ConexionSql();
+                DataTable result = conection.readerTable(query, idSucursal);
 
-                    ConexionSql conection = new ConexionSql();
-                    DataTable result = conection.readerTable(query, idSucursal);
-
-
-                    if (result.Rows.Count >0)
-                    {
-                        //GrindV, databind, etc...
-                    }
+                if (result.Rows.Count >0)
+                {
+                    //GrindV, databind, etc...
+                    gvSucursales.DataSource = result;
+                    gvSucursales.DataBind();
+                    lblNoResultados.Text = string.Empty;
+                }
                 else
                 {
                     lblNoResultados.Text = "No se encontraron sucursales*";

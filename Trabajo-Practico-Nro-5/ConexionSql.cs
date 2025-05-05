@@ -15,7 +15,7 @@ namespace Trabajo_Practico_Nro_5
 
         SqlConnection connection = new SqlConnection(ConectionString);
 
-        public DataTable readerTable(string querySql, string IdSucursal)
+        public DataTable readerTable(string querySql, string IdSucursal=null)
         {
             DataTable dt = new DataTable();
             
