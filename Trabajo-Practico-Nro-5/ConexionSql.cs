@@ -62,6 +62,8 @@ namespace Trabajo_Practico_Nro_5
         {
 
             connection.Open();
+            // Se define el comando SQL
+            SqlCommand command = new SqlCommand(querySql, connection);
 
             connection.Close();
 
