@@ -9,7 +9,10 @@ namespace Trabajo_Practico_Nro_5
 {
     public partial class ListadoSucursales : System.Web.UI.Page
     {
-        string query = "SELECT Id_Sucursal, NombreSucursal, DescripcionSucursal, Id_ProvinciaSucursal, DireccionSucursal FROM Sucursal";
+        string query = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, S.Id_ProvinciaSucursal, S.DireccionSucursal, P.NombreProvincia " +
+                       "FROM Sucursal S " +
+                       "INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia " +
+                       "WHERE S.Id_Sucursal = @IdSucursal";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,5 +21,5 @@ namespace Trabajo_Practico_Nro_5
         {
             Response.Redirect("AgregarSucursal.aspx");
         }
-        }
+    }
     }

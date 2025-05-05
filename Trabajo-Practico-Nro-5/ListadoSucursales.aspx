@@ -81,7 +81,7 @@
                         <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
                     </td>
                     <td>
-                        <asp:Button ID="btnMostrar" runat="server" Text="Mostrar todos" OnClick="btnMostrar_Click" />
+                        <asp:Button ID="btnMostrar" runat="server" Text="Mostrar todos" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -91,7 +91,8 @@
                         <asp:GridView ID="gvSucursales" runat="server">
                         </asp:GridView>
                     </td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        &nbsp;</td>
                     <td class="auto-style18">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
