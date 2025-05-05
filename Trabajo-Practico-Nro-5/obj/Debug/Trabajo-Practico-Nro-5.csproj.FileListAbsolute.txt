@@ -162,3 +162,44 @@ C:\Users\Nacho\Documents\git\TP5-Grupo12\Trabajo-Practico-Nro-5\Trabajo-Practico
 C:\Users\Nacho\Documents\git\TP5-Grupo12\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\obj\Debug\Trabajo-.51403DA1.Up2Date
 C:\Users\Nacho\Documents\git\TP5-Grupo12\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\obj\Debug\Trabajo-Practico-Nro-5.dll
 C:\Users\Nacho\Documents\git\TP5-Grupo12\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\obj\Debug\Trabajo-Practico-Nro-5.pdb
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\Trabajo-Practico-Nro-5.dll.config
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\Trabajo-Practico-Nro-5.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\Trabajo-Practico-Nro-5.pdb
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\csc.exe
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\csc.exe.config
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\csc.rsp
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\csi.exe
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\csi.exe.config
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\csi.rsp
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\System.Buffers.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\System.Collections.Immutable.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\System.Memory.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\System.Numerics.Vectors.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\System.Reflection.Metadata.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\vbc.exe
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\vbc.exe.config
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\vbc.rsp
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\VBCSCompiler.exe
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\roslyn\VBCSCompiler.exe.config
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\obj\Debug\Trabajo-Practico-Nro-5.csproj.AssemblyReference.cache
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\obj\Debug\Trabajo-Practico-Nro-5.csproj.CoreCompileInputs.cache
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\obj\Debug\Trabajo-.51403DA1.Up2Date
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\obj\Debug\Trabajo-Practico-Nro-5.dll
+E:\Usuarios\Noodledit\Desktop\Tup\Tercer Cuatrimestre\Programacion III\TPs\Trabajo-Practico-Nro-5\Trabajo-Practico-Nro-5\obj\Debug\Trabajo-Practico-Nro-5.pdb
