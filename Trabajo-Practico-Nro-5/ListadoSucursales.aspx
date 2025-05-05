@@ -78,7 +78,7 @@
                         <asp:RegularExpressionValidator ID="revIdSucursal" runat="server" ControlToValidate="txtSucursalID" ForeColor="#CC0000" ValidationExpression="^[0-9]+$">Debe ingresar un ID valido</asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style18">
-                        <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
+                        <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrarClick" />
                     </td>
                     <td>
                         <asp:Button ID="btnMostrar" runat="server" Text="Mostrar todos" />

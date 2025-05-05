@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -21,5 +22,46 @@ namespace Trabajo_Practico_Nro_5
         {
             Response.Redirect("AgregarSucursal.aspx");
         }
+
+        protected void btnFiltrarClick(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtSucursalID.Text))
+            {
+                int idSucur;
+
+                if (int.TryParse(txtSucursalID.Text, out idSucur))
+                {
+
+                    query = query.Replace("@IdSucursal",idSucur.ToString());
+
+
+
+                    ConexionSql conection = new ConexionSql();
+                    DataTable result = conection.readerTable(query);
+
+
+                    if (result.Rows.Count >0)
+                    {
+                        //GrindV, databind, etc...
+                    }
+
+
+
+                }
+                else
+                {
+                    return;
+                }
+
+
+            }
+
+            
+
+
+        }
+
+
+
     }
     }
