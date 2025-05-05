@@ -58,17 +58,17 @@ namespace Trabajo_Practico_Nro_5
 
 
 
-        public void EjecutarConsultaEliminacion(string querySql)
+        public void EjecutarConsultaEliminacion(string querySql, string idSucursal)
         {
-
             connection.Open();
             // Se define el comando SQL
             SqlCommand command = new SqlCommand(querySql, connection);
 
             command.Parameters.AddWithValue("@idSucursal", idSucursal);
 
-            connection.Close();
+            command.ExecuteNonQuery();
 
+            connection.Close();
         }
 
     }
