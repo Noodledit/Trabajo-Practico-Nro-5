@@ -58,7 +58,7 @@ namespace Trabajo_Practico_Nro_5
 
 
 
-        public void EjecutarConsultaEliminacion(string querySql, string idSucursal)
+        public int EjecutarConsultaEliminacion(string querySql, string idSucursal)
         {
             connection.Open();
             // Se define el comando SQL
@@ -68,9 +68,12 @@ namespace Trabajo_Practico_Nro_5
 
             command.ExecuteNonQuery();
 
-            connection.Close();
-        }
+            int resultado2 = command.ExecuteNonQuery();
 
+            connection.Close();
+
+            return resultado2;
+        }
     }
 }
 
