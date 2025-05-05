@@ -10,7 +10,7 @@ namespace Trabajo_Practico_Nro_5
     public partial class EliminarSucursal : System.Web.UI.Page
     {
         ConexionSql conexion = new ConexionSql();
-        private string querySql = "DELETE FROM Sucursales WHERE idSucursal = @idSucursal";
+        private string querySql = "DELETE FROM Sucursal WHERE Id_Sucursal = @idSucursal";
         protected void Page_Load(object sender, EventArgs e)
         {
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
@@ -20,9 +20,19 @@ namespace Trabajo_Practico_Nro_5
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-            int idSucursal = int.Parse(txtSucursal.Text);
+            string idSucursal = txtSucursal.Text; 
             int resultado = conexion.EjecutarConsultaEliminacion(querySql, idSucursal);
-
+            // Verifica si la sucursal fue eliminada
+            if (resultado == 0)
+            {
+                lblMensaje.Text = "No se pudo eliminar la sucursal, verifique el ID ingresado.";
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
+            }
+            else
+            {
+                lblMensaje.Text = "Sucursal eliminada correctamente.";
+                lblMensaje.ForeColor = System.Drawing.Color.Green;
+            }
         }
     }
 }

@@ -66,14 +66,14 @@ namespace Trabajo_Practico_Nro_5
 
             command.Parameters.AddWithValue("@idSucursal", idSucursal);
 
-            command.ExecuteNonQuery();
-
-            int resultado2 = command.ExecuteNonQuery();
+            // Ejecuta la consulta y captura el número de filas afectadas
+            int resultado = command.ExecuteNonQuery();
 
             connection.Close();
 
-            return resultado2;
+            return resultado; 
         }
+
     }
 }
 
