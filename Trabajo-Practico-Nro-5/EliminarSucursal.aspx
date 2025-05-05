@@ -16,6 +16,18 @@
         .auto-style17 {
             width: 250px;
         }
+        .auto-style18 {
+            width: 195px;
+        }
+        .auto-style19 {
+            width: 141px;
+        }
+        .auto-style20 {
+            width: 347px;
+        }
+        .auto-style21 {
+            width: 20px;
+        }
     </style>
 </head>
 <body>
@@ -37,71 +49,75 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
-            </form>
     <table class="auto-style1">
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style21">&nbsp;</td>
+            <td class="auto-style19">&nbsp;</td>
+            <td class="auto-style20">&nbsp;</td>
+            <td class="auto-style18">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style21">&nbsp;</td>
+            <td class="auto-style19">&nbsp;</td>
+            <td class="auto-style20">&nbsp;</td>
+            <td class="auto-style18">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style21">&nbsp;</td>
+            <td class="auto-style19">Ingrese ID sucursal:</td>
+            <td class="auto-style20">
+                <asp:TextBox ID="txtSucursal" runat="server" Width="304px"></asp:TextBox>
+            </td>
+            <td class="auto-style18">
+                <asp:Button ID="btnEliminar" runat="server" OnClick="btnEliminar_Click" Text="Eliminar" />
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
+            <td class="auto-style21">&nbsp;</td>
+            <td class="auto-style19">&nbsp;</td>
+            <td class="auto-style20">&nbsp;</td>
+            <td class="auto-style18">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style21">&nbsp;</td>
+            <td class="auto-style19">&nbsp;</td>
+            <td class="auto-style20">&nbsp;</td>
+            <td class="auto-style18">&nbsp;</td>
             <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style21">&nbsp;</td>
+            <td class="auto-style19">&nbsp;</td>
+            <td class="auto-style20">&nbsp;</td>
+            <td class="auto-style18">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style21">&nbsp;</td>
+            <td class="auto-style19">&nbsp;</td>
+            <td class="auto-style20">&nbsp;</td>
+            <td class="auto-style18">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
     </table>
-</body>
+            </form>
+    </body>
 </html>

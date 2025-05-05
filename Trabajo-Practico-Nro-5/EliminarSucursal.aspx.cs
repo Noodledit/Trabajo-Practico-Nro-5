@@ -17,6 +17,13 @@ namespace Trabajo_Practico_Nro_5
 
 
         }
+
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int idSucursal = int.Parse(txtSucursal.Text);
+            int resultado = conexion.EjecutarConsultaEliminacion(querySql, idSucursal);
+
+        }
     }
 }
 
