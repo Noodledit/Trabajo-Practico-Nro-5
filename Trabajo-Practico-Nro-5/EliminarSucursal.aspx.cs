@@ -9,8 +9,11 @@ namespace Trabajo_Practico_Nro_5
 {
     public partial class EliminarSucursal : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
 
         }
     }

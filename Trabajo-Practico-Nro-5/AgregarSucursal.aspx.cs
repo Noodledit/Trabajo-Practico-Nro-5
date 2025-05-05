@@ -20,7 +20,7 @@ namespace Trabajo_Practico_Nro_5
            
             string query = "SELECT * FROM Provincia";
             DataTable dtProvincias = new DataTable();
-            dtProvincias = conexion.readerTable(query);
+            dtProvincias = conexion.readerTable(query);///Hay que arreglar esto att Miguel : ), la modificacion a readerTable esta afectando este punto del ejercicio
 
             if (!IsPostBack)
             {

@@ -25,41 +25,36 @@ namespace Trabajo_Practico_Nro_5
 
         protected void btnFiltrarClick(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtSucursalID.Text))
+            string idSucursal = txtSucursalID.Text.Trim();
+
+            if (!string.IsNullOrEmpty(idSucursal))
             {
-                int idSucur;
-
-                if (int.TryParse(txtSucursalID.Text, out idSucur))
-                {
-
-                    query = query.Replace("@IdSucursal",idSucur.ToString());
-
 
 
                     ConexionSql conection = new ConexionSql();
-                    DataTable result = conection.readerTable(query);
+                    DataTable result = conection.readerTable(query, idSucursal);
 
 
                     if (result.Rows.Count >0)
                     {
                         //GrindV, databind, etc...
-                    }
+                    } 
 
 
+            }
 
-                }
-                else
+            else
                 {
                     return;
                 }
 
 
-            }
-
-            
-
-
         }
+
+
+
+
+
 
 
 
