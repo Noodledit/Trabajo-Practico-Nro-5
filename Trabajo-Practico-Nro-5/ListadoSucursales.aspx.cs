@@ -1,6 +1,8 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -10,10 +12,15 @@ namespace Trabajo_Practico_Nro_5
 {
     public partial class ListadoSucursales : System.Web.UI.Page
     {
-        string query = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, S.Id_ProvinciaSucursal, S.DireccionSucursal, P.DescripcionProvinci " +
+        string query = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, S.Id_ProvinciaSucursal, S.DireccionSucursal, P.DescripcionProvincia " +
                        "FROM Sucursal S " +
                        "INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia " +
                        "WHERE S.Id_Sucursal = @IdSucursal";
+
+        string queryTotalSucursales = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, S.Id_ProvinciaSucursal, S.DireccionSucursal, P.DescripcionProvincia " +
+                                      "FROM Sucursal S " +
+                                      "INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia";
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -33,7 +40,7 @@ namespace Trabajo_Practico_Nro_5
                 ConexionSql conection = new ConexionSql();
                 DataTable result = conection.readerTable(query, idSucursal);
 
-                if (result.Rows.Count >0)
+                if (result.Rows.Count > 0)
                 {
                     //GrindV, databind, etc...
                     gvSucursales.DataSource = result;
@@ -48,19 +55,28 @@ namespace Trabajo_Practico_Nro_5
             }
 
             else
-                {
-                    return;
-                }
+            {
+                return;
+            }
 
 
         }
 
+        protected void btnMostrar_Click(object sender, EventArgs e)
+        {
 
+            ConexionSql conection = new ConexionSql();
+            DataTable result = conection.readerTable(queryTotalSucursales);
 
-
-
-
-
-
+            if (result.Rows.Count > 0)
+            {
+                gvSucursales.DataSource = result;
+                gvSucursales.DataBind();
+            }
+            else
+            {
+                lblNoResultados.Text = "No se encontraron sucursales.";
+            }
+        }
     }
-    }
+}

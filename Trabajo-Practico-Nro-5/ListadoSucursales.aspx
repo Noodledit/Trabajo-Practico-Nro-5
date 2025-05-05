@@ -83,7 +83,7 @@
                         <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrarClick" />
                     </td>
                     <td>
-                        <asp:Button ID="btnMostrar" runat="server" Text="Mostrar todos" />
+                        <asp:Button ID="btnMostrar" runat="server" Text="Mostrar todos" OnClick="btnMostrar_Click" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>

@@ -11,14 +11,14 @@ namespace Trabajo_Practico_Nro_5
     public class ConexionSql
     {
         //private const string ConectionString = "Data Source=.;Initial Catalog = BDSucursales; Integrated Security = True"; //no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
-        private const string ConectionString = @"Server=localhost\\sqlexpress;DataBase = BDSucursales; Integrated Security = True;";
+        private const string ConectionString = @"Server=DESKTOP-JNJ0TAL\SQLEXPRESS;DataBase = BDSucursales; Integrated Security = True;";
 
         SqlConnection connection = new SqlConnection(ConectionString);
 
-        public DataTable readerTable(string querySql, string IdSucursal=null)
+        public DataTable readerTable(string querySql, string IdSucursal = null)
         {
             DataTable dt = new DataTable();
-            
+
             connection.Open();
             // Se define el comando SQL
             SqlCommand command = new SqlCommand(querySql, connection);
@@ -43,7 +43,7 @@ namespace Trabajo_Practico_Nro_5
             connection.Open();
 
             SqlCommand sqlCommand = new SqlCommand(consulta, connection);
-                
+
             sqlCommand.Parameters.AddWithValue("@nombre", nombre);
             sqlCommand.Parameters.AddWithValue("@descripcion", descripcion);
             sqlCommand.Parameters.AddWithValue("@idProvincia", provincia);
@@ -54,6 +54,19 @@ namespace Trabajo_Practico_Nro_5
 
             return resultado;
         }
+
+
+
+
+        public void EjecutarConsultaEliminacion(string querySql)
+        {
+
+            connection.Open();
+
+            connection.Close();
+
+        }
+
     }
 }
 
