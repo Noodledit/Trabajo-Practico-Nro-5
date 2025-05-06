@@ -23,7 +23,7 @@
             width: 141px;
         }
         .auto-style20 {
-            width: 332px;
+            width: 385px;
         }
         .auto-style21 {
             width: 20px;
@@ -37,7 +37,7 @@
             height: 23px;
         }
         .auto-style24 {
-            width: 332px;
+            width: 385px;
             height: 23px;
         }
         .auto-style25 {
@@ -84,7 +84,7 @@
             <td class="auto-style20">
                 <asp:RegularExpressionValidator ID="revEliminar" runat="server" ControlToValidate="txtSucursal" ErrorMessage="RegularExpressionValidator" ValidationExpression="^[0-9,$]*$">Ingrese un ID válido</asp:RegularExpressionValidator>
 &nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:RequiredFieldValidator ID="rfvEliminar" runat="server" ControlToValidate="txtSucursal">El campo no debe estar vacio</asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvEliminar" runat="server" ControlToValidate="txtSucursal" ForeColor="Red" >Por Favor ingrese la Sucursal</asp:RequiredFieldValidator>
             </td>
             <td class="auto-style18">&nbsp;</td>
             <td>&nbsp;</td>

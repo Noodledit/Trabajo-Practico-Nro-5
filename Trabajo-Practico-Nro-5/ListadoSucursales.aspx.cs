@@ -64,6 +64,7 @@ namespace Trabajo_Practico_Nro_5
 
         protected void btnMostrar_Click(object sender, EventArgs e)
         {
+            txtSucursalID.Text = string.Empty;
 
             ConexionSql conection = new ConexionSql();
             DataTable result = conection.readerTable(queryTotalSucursales);

@@ -32,6 +32,9 @@ namespace Trabajo_Practico_Nro_5
                 lblMensaje.Text = "Sucursal eliminada correctamente.";
                 lblMensaje.ForeColor = System.Drawing.Color.Green;
             }
+
+            txtSucursal.Text = string.Empty;
+
         }
     }
 }

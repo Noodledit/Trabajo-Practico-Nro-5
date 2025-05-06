@@ -11,7 +11,7 @@ namespace Trabajo_Practico_Nro_5
     public class ConexionSql
     {
         //private const string ConectionString = "Data Source=.;Initial Catalog = BDSucursales; Integrated Security = True"; //no saquen este link por favor, prueben el programa antes y cuenteneme si corrio
-        private const string ConectionString = @"Data Source=CAMILAPC\SQLEXPRESS;Initial Catalog=BDSucursales;Integrated Security=True;TrustServerCertificate=True;";
+        private const string ConectionString = @"Data Source=localhost\\sqlexpress;Initial Catalog=BDSucursales;Integrated Security=True;TrustServerCertificate=True;";
 
         SqlConnection connection = new SqlConnection(ConectionString);
 
