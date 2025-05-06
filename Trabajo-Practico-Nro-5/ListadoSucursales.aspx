@@ -66,7 +66,9 @@
                     <td class="auto-style5">
                         <asp:Label ID="lblNoResultados" runat="server" ForeColor="#CC0000"></asp:Label>
                     </td>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtSucursalID" ForeColor="#CC0000" ValidationGroup="grupoFiltrar">El campo no debe quedar vacio</asp:RequiredFieldValidator>
+                    </td>
                     <td class="auto-style18">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -74,13 +76,13 @@
                 <tr>
                     <td class="auto-style6">Busqueda, ingrese el Id Sucursal: </td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="txtSucursalID" runat="server" Width="187px"></asp:TextBox>
+                        <asp:TextBox ID="txtSucursalID" runat="server" Width="187px" ValidationGroup="grupoFiltrar"></asp:TextBox>
                     </td>
                     <td class="auto-style3">
                         <asp:RegularExpressionValidator ID="revIdSucursal" runat="server" ControlToValidate="txtSucursalID" ForeColor="#CC0000" ValidationExpression="^[0-9]+$">Debe ingresar un ID valido</asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style18">
-                        <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrarClick" />
+                        <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrarClick" ValidationGroup="grupoFiltrar" />
                     </td>
                     <td>
                         <asp:Button ID="btnMostrar" runat="server" Text="Mostrar todos" OnClick="btnMostrar_Click" />

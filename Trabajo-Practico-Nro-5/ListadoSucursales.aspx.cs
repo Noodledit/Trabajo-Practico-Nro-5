@@ -10,20 +10,19 @@ using System.Web.UI.WebControls;
 
 namespace Trabajo_Practico_Nro_5
 {
+
     public partial class ListadoSucursales : System.Web.UI.Page
     {
-        string query = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, S.Id_ProvinciaSucursal, S.DireccionSucursal, P.DescripcionProvincia " +
-                       "FROM Sucursal S " +
-                       "INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia " +
-                       "WHERE S.Id_Sucursal = @IdSucursal";
+        private string query = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, S.Id_ProvinciaSucursal, S.DireccionSucursal, P.DescripcionProvincia FROM Sucursal S INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia ";
 
-        string queryTotalSucursales = "SELECT S.Id_Sucursal, S.NombreSucursal, S.DescripcionSucursal, S.Id_ProvinciaSucursal, S.DireccionSucursal, P.DescripcionProvincia " +
-                                      "FROM Sucursal S " +
-                                      "INNER JOIN Provincia P ON S.Id_ProvinciaSucursal = P.Id_Provincia";
+        ConexionSql connection = new ConexionSql();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                llenarTabla();
+            }
         }
         protected void hlAgregar_DataBinding(object sender, EventArgs e)
         {
@@ -37,8 +36,9 @@ namespace Trabajo_Practico_Nro_5
             if (!string.IsNullOrEmpty(idSucursal))
             {
 
-                ConexionSql conection = new ConexionSql();
-                DataTable result = conection.readerTable(query, idSucursal);
+
+
+                DataTable result = connection.readerTable(query + "WHERE S.Id_Sucursal = @IdSucursal", idSucursal);
 
                 if (result.Rows.Count > 0)
                 {
@@ -58,26 +58,21 @@ namespace Trabajo_Practico_Nro_5
             {
                 return;
             }
+        }
 
 
+        private void llenarTabla()
+        {
+            txtSucursalID.Text = string.Empty;
+
+            DataTable result = connection.readerTable(query);
+            gvSucursales.DataSource = result;
+            gvSucursales.DataBind();
         }
 
         protected void btnMostrar_Click(object sender, EventArgs e)
         {
-            txtSucursalID.Text = string.Empty;
-
-            ConexionSql conection = new ConexionSql();
-            DataTable result = conection.readerTable(queryTotalSucursales);
-
-            if (result.Rows.Count > 0)
-            {
-                gvSucursales.DataSource = result;
-                gvSucursales.DataBind();
-            }
-            else
-            {
-                lblNoResultados.Text = "No se encontraron sucursales.";
-            }
+            llenarTabla();
         }
     }
 }
