@@ -23,10 +23,29 @@
             width: 141px;
         }
         .auto-style20 {
-            width: 347px;
+            width: 332px;
         }
         .auto-style21 {
             width: 20px;
+        }
+        .auto-style22 {
+            width: 20px;
+            height: 23px;
+        }
+        .auto-style23 {
+            width: 141px;
+            height: 23px;
+        }
+        .auto-style24 {
+            width: 332px;
+            height: 23px;
+        }
+        .auto-style25 {
+            width: 195px;
+            height: 23px;
+        }
+        .auto-style26 {
+            height: 23px;
         }
     </style>
 </head>
@@ -51,18 +70,22 @@
         </table>
     <table class="auto-style1">
         <tr>
-            <td class="auto-style21">&nbsp;</td>
-            <td class="auto-style19">&nbsp;</td>
-            <td class="auto-style20">&nbsp;</td>
-            <td class="auto-style18">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style22"></td>
+            <td class="auto-style23"></td>
+            <td class="auto-style24"></td>
+            <td class="auto-style25"></td>
+            <td class="auto-style26"></td>
+            <td class="auto-style26"></td>
+            <td class="auto-style26"></td>
         </tr>
         <tr>
             <td class="auto-style21">&nbsp;</td>
             <td class="auto-style19">&nbsp;</td>
-            <td class="auto-style20">&nbsp;</td>
+            <td class="auto-style20">
+                <asp:RegularExpressionValidator ID="revEliminar" runat="server" ControlToValidate="txtSucursal" ErrorMessage="RegularExpressionValidator" ValidationExpression="^[0-9,$]*$">Ingrese un ID válido</asp:RegularExpressionValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:RequiredFieldValidator ID="rfvEliminar" runat="server" ControlToValidate="txtSucursal">El campo no debe estar vacio</asp:RequiredFieldValidator>
+            </td>
             <td class="auto-style18">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -72,7 +95,7 @@
             <td class="auto-style21">&nbsp;</td>
             <td class="auto-style19">Ingrese ID sucursal:</td>
             <td class="auto-style20">
-                <asp:TextBox ID="txtSucursal" runat="server" Width="304px"></asp:TextBox>
+                <asp:TextBox ID="txtSucursal" runat="server" Width="304px" CausesValidation="true"></asp:TextBox>
             </td>
             <td class="auto-style18">
                 <asp:Button ID="btnEliminar" runat="server" OnClick="btnEliminar_Click" Text="Eliminar" />

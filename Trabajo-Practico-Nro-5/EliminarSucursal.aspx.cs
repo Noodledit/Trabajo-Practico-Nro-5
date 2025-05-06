@@ -15,7 +15,6 @@ namespace Trabajo_Practico_Nro_5
         {
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
 
-
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
